@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio CTC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+        
+        .menu-section {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 1.8rem;
+            margin: 15px 0;
+        }
+
+        h2 {
+            color: #e44d26;
+            border-bottom: 2px solid #e44d26;
+            padding-bottom: 5px;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: #666;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ccc;
+            font-size: 1.2rem;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 12px 0;
+            padding: 8px 0;
+            border-bottom: 1px dashed #ccc;
+            flex-wrap: wrap;
+        }
+
+        .item-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .item-image {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .price {
+            color: #2a9d8f;
+            font-weight: bold;
+            padding-left: 10px;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+
+            .menu-section {
+                padding: 10px;
+            }
+
+            .item-info {
+                min-width: 150px;
+            }
+
+            .item-image {
+                width: 60px;
+                height: 60px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Cardápio CTC</h1>
+
+    <div class="menu-section">
+        <h2>Comidas</h2>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/x-burguer.jpg" alt="X-Burguer" class="item-image">
+                <span>X-Burguer</span>
+            </div>
+            <span class="price">R$ 12,00</span>
+        </div>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/misto-quente.jpg" alt="Misto Quente" class="item-image">
+                <span>Misto Quente</span>
+            </div>
+            <span class="price">R$ 8,00</span>
+        </div>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/pao-queijo.jpg" alt="Pão de Queijo" class="item-image">
+                <span>Pão de Queijo</span>
+            </div>
+            <span class="price">R$ 5,00</span>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Bebidas</h2>
+        
+        <h3>Bebidas Não Alcoólicas</h3>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/cafe.jpg" alt="Café" class="item-image">
+                <span>Café</span>
+            </div>
+            <span class="price">R$ 3,00</span>
+        </div>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/refrigerante.jpg" alt="Refrigerante" class="item-image">
+                <span>Refrigerante</span>
+            </div>
+            <span class="price">R$ 5,00</span>
+        </div>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/suco-natural.jpg" alt="Suco Natural" class="item-image">
+                <span>Suco Natural</span>
+            </div>
+            <span class="price">R$ 7,00</span>
+        </div>
+
+        <h3>Bebidas Alcoólicas</h3>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/cerveja.jpg" alt="Cerveja" class="item-image">
+                <span>Cerveja</span>
+            </div>
+            <span class="price">R$ 8,00</span>
+        </div>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/caipirinha.jpg" alt="Caipirinha" class="item-image">
+                <span>Caipirinha</span>
+            </div>
+            <span class="price">R$ 12,00</span>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Lanches</h2>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/coxinha.jpg" alt="Coxinha" class="item-image">
+                <span>Coxinha</span>
+            </div>
+            <span class="price">R$ 6,00</span>
+        </div>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/pastel.jpg" alt="Pastel" class="item-image">
+                <span>Pastel</span>
+            </div>
+            <span class="price">R$ 7,00</span>
+        </div>
+        <div class="item">
+            <div class="item-info">
+                <img src="images/empada.jpg" alt="Empada" class="item-image">
+                <span>Empada</span>
+            </div>
+            <span class="price">R$ 6,00</span>
+        </div>
+    </div>
+</body>
+</html>
